@@ -1,0 +1,7 @@
+*.asv
+*.m~
+*.mat
+.DS_Store
+slprj/
+*.slxc
+codegen/ 
