@@ -14,12 +14,21 @@ This repository implements several types of neural networks with a focus on Conc
 
 ## File Description
 
+### Main Models
 - `CESN.m`: Main implementation of Conceptor Echo State Networks
 - `C2_ESN_concept_delma.m`: Example implementation of ESN concepts
 - `LSTMwind.m`: LSTM model implementation
 - `D1_6_GRU_del.m`: GRU model implementation
 - `D1_5_LSTM_del.m`: LSTM model implementation
 - `BP.m`: Back Propagation Neural Network implementation
+
+### Utility Functions
+- `function/scurve.m`: S-curve dataset generation
+- `function/lle.m`: Locally Linear Embedding implementation
+- `function/swissroll.m`: Swiss roll dataset generation
+- `function/xcorr_fft.m`: Fast cross-correlation using FFT
+- `function/seriesDecomp.m`: Time series decomposition
+- `function/nrmse.m`: Normalized Root Mean Square Error calculation
 
 ## Requirements
 
@@ -52,6 +61,16 @@ addpath(genpath('Transfer-Concept-ESN'));
 load('traindata.mat');  % Load your training data
 model = CESN(input_size, reservoir_size, output_size);
 output = model.train(input_data, target_data);
+
+% Example of using utility functions
+% Generate S-curve dataset
+[X, labels] = scurve(1000, 0.1);
+
+% Calculate NRMSE
+error = nrmse(predicted, actual);
+
+% Perform time series decomposition
+[trend, seasonal, residual] = seriesDecomp(timeseries_data);
 ```
 
 ## Notes
