@@ -8,6 +8,10 @@ This project contains implementations of various neural network models, includin
 - GRU (Gated Recurrent Unit)
 - BP (Back Propagation Neural Network)
 
+## Overview
+
+This repository implements several types of neural networks with a focus on Conceptor Echo State Networks (CESN). The implementation includes both traditional neural networks (BP) and various types of recurrent neural networks (ESN, LSTM, GRU). The code is particularly useful for time series prediction and pattern recognition tasks.
+
 ## File Description
 
 - `CESN.m`: Main implementation of Conceptor Echo State Networks
@@ -23,17 +27,46 @@ This project contains implementations of various neural network models, includin
 - Neural Network Toolbox
 - Deep Learning Toolbox (optional)
 
+## Installation
+
+1. Clone this repository:
+```bash
+git clone https://github.com/zhuyingqin/Transfer-Concept-ESN.git
+```
+
+2. Add the project directory to your MATLAB path:
+```matlab
+addpath(genpath('Transfer-Concept-ESN'));
+```
+
 ## Usage Instructions
 
 1. Ensure your MATLAB environment meets the above requirements
 2. Download all files to the same directory
 3. Run the corresponding .m files in MATLAB
 
+### Example Usage
+
+```matlab
+% Example code for using CESN
+load('traindata.mat');  % Load your training data
+model = CESN(input_size, reservoir_size, output_size);
+output = model.train(input_data, target_data);
+```
+
 ## Notes
 
 - Some code may require training data, please ensure data files are in the correct path
 - Execution time may be lengthy, please be patient
 - It is recommended to read the comments in the code to understand parameter settings
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Citation
 
@@ -47,4 +80,9 @@ If you use this code in your research, please cite:
   publisher = {GitHub},
   url = {https://github.com/zhuyingqin/Transfer-Concept-ESN}
 }
-``` 
+```
+
+## Contact
+
+- Author: Yingqin Zhu
+- Project Link: [https://github.com/zhuyingqin/Transfer-Concept-ESN](https://github.com/zhuyingqin/Transfer-Concept-ESN) 
