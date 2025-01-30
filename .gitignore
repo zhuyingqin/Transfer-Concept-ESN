@@ -1,6 +1,8 @@
 *.asv
 *.m~
+# 允许 traindata.mat 但忽略其他 .mat 文件
 *.mat
+!traindata.mat
 .DS_Store
 slprj/
 *.slxc
