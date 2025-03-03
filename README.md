@@ -92,12 +92,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you use this code in your research, please cite:
 
 ```
-@misc{CESN2024,
-  author = {Yingqin Zhu},
-  title = {Transfer-Concept-ESN},
-  year = {2024},
-  publisher = {GitHub},
-  url = {https://github.com/zhuyingqin/Transfer-Concept-ESN}
+@article{zhu2025multi,
+  title={A Multi-objective transfer learning framework for time series forecasting with Concept Echo State Networks},
+  author={Zhu, Yingqin and Yu, Wen and Li, Xiaoou},
+  journal={Neural Networks},
+  pages={107272},
+  year={2025},
+  publisher={Elsevier}
 }
 ```
 
